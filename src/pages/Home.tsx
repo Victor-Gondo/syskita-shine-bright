@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="SYSKITA | Centralized Sales, Ops & Finance Reporting Platform"
-        description="SYSKITA is the all-in-one platform that unifies sales, finance, and operations reporting for growing businesses."
+        title="SYSKITA | Centralized Sales, Ops & Field Team Reporting Platform"
+        description="SYSKITA helps FMCG and retail brands manage sales reporting, field execution, approvals, compliance, and live GPS tracking with real-time dashboards."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-hero text-primary-foreground py-20 lg:py-32">
@@ -17,11 +17,11 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Your Single Source of Truth for{" "}
-                  <span className="text-secondary">Operations</span>
+                  Centralize Your Sales, Operations, and{" "}
+                  <span className="text-secondary">Field Execution</span>
                 </h1>
                 <p className="text-xl text-primary-foreground/90 max-w-lg">
-                  SYSKITA unifies sales, operations, finance, and production reporting into one powerful dashboard.
+                  SYSKITA is the all-in-one platform for sales reporting, field team management, workflow automation, and live GPS tracking – built for FMCG and retail execution.
                 </p>
               </div>
               
@@ -61,9 +61,9 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Centralized Reporting</h3>
+                <h3 className="text-xl font-semibold mb-4">Integrated Field & Sales Data</h3>
                 <p className="text-muted-foreground">
-                  All your data in one platform.
+                  Manage merchandisers, sales reps, and operations in one platform.
                 </p>
               </CardContent>
             </Card>
@@ -75,9 +75,9 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Smarter Decisions</h3>
+                <h3 className="text-xl font-semibold mb-4">Real-Time Dashboards & Live GPS Tracking</h3>
                 <p className="text-muted-foreground">
-                  Real-time dashboards for your teams.
+                  Monitor visits, orders, approvals, and field coverage as they happen.
                 </p>
               </CardContent>
             </Card>
@@ -89,9 +89,9 @@ const Home = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Seamless Workflows</h3>
+                <h3 className="text-xl font-semibold mb-4">Automated Workflows</h3>
                 <p className="text-muted-foreground">
-                  Connect sales, finance, and ops effortlessly.
+                  Approvals, PO lifecycles, and reporting made seamless.
                 </p>
               </CardContent>
             </Card>
@@ -116,9 +116,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-4">Input & Sync</h3>
+              <h3 className="text-xl font-semibold mb-4">Log Data</h3>
               <p className="text-muted-foreground">
-                Input & sync your data securely.
+                Frontliners and managers log data via mobile and web apps.
               </p>
             </div>
 
@@ -126,9 +126,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-4">Track & Manage</h3>
+              <h3 className="text-xl font-semibold mb-4">Auto-Sync</h3>
               <p className="text-muted-foreground">
-                Track POs, invoices, and KPIs with ease.
+                GPS-verified visits, live location pings every 5 minutes, photo uploads, orders, and stock data sync automatically.
               </p>
             </div>
 
@@ -136,9 +136,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-4">Insights & Action</h3>
+              <h3 className="text-xl font-semibold mb-4">Approve & Monitor</h3>
               <p className="text-muted-foreground">
-                Get insights and take action instantly.
+                Managers approve submissions and access real-time dashboards and reports.
               </p>
             </div>
           </div>
@@ -192,10 +192,10 @@ const Home = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to simplify your operations?
+            Unify Your Operations, Empower Your Teams.
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            See how SYSKITA can transform your business with centralized reporting and real-time insights.
+            Take control of your field operations with live GPS tracking, automated workflows, and real-time reporting.
           </p>
           <CTAButton variant="book" size="lg" />
         </div>
