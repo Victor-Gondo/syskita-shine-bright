@@ -4,13 +4,13 @@ import { SEOHead } from "@/components/SEOHead";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Tan",
-      role: "CEO",
+      name: "Francis Tjiterosampurno",
+      role: "CEO & Co-Founder",
       bio: "Leads product vision and company growth."
     },
     {
-      name: "Michael Chen",
-      role: "CTO",
+      name: "Victor Gondo Poetra",
+      role: "CTO & Co-Founder", 
       bio: "Oversees technology and product development."
     },
     {
