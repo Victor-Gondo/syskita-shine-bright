@@ -14,7 +14,8 @@ const MERQ = () => {
     {
       icon: Route,
       title: "Smart Route Optimization & Planning",
-      description: "AI-powered route planning that optimizes travel time and fuel costs. Track actual vs planned routes with detailed analytics."
+      description: "AI-powered route planning that reduces travel time by up to 40% and cuts fuel costs. Real-time traffic updates, multi-stop optimization, and predictive delivery windows with live tracking.",
+      highlight: true
     },
     {
       icon: MapPin,
@@ -126,7 +127,7 @@ const MERQ = () => {
             MERQ – Real-Time Field Team Intelligence
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Revolutionary field management with live location tracking, route optimization, and AI-powered analytics. Know exactly where your team is and what they're accomplishing – in real-time.
+            Revolutionary field management with AI-powered route optimization, real-time location tracking, and intelligent analytics. Reduce travel time by 40% while knowing exactly where your team is and what they're accomplishing.
           </p>
           <CTAButton variant="demo" size="lg" />
         </div>

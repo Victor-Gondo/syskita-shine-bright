@@ -8,7 +8,7 @@ const MERQPricing = () => {
     {
       name: "Starter",
       description: "Basic features for small teams",
-      price: "Contact Sales",
+      price: "To be disclosed",
       features: [
         "Up to 10 field users",
         "GPS check-ins & geofencing",
@@ -23,7 +23,7 @@ const MERQPricing = () => {
     {
       name: "Professional",
       description: "Full feature set + dashboards",
-      price: "Contact Sales",
+      price: "To be disclosed",
       features: [
         "Up to 50 field users",
         "All Starter features",
@@ -39,7 +39,7 @@ const MERQPricing = () => {
     {
       name: "Enterprise",
       description: "Custom features, integrations, SLAs",
-      price: "Custom Quote",
+      price: "To be disclosed",
       features: [
         "Unlimited users",
         "All Professional features",
