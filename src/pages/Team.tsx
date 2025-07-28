@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { SEOHead } from "@/components/SEOHead";
 
 const Team = () => {
   const teamMembers = [
@@ -23,6 +23,10 @@ const Team = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Meet the SYSKITA Team | Driving Innovation"
+        description="Get to know the team behind SYSKITA, a platform built to help businesses scale smarter."
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-subtle">
         <div className="container mx-auto px-4">

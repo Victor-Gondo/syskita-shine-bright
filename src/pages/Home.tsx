@@ -1,10 +1,15 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { CTAButton } from "@/components/ui/cta-button";
+import { SEOHead } from "@/components/SEOHead";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="SYSKITA | Centralized Sales, Ops & Finance Reporting Platform"
+        description="Unify your operations with SYSKITA – the all-in-one platform for sales, finance, and production reporting."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-hero text-primary-foreground py-20 lg:py-32">
         <div className="container mx-auto px-4">
@@ -21,9 +26,7 @@ const Home = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="lg" className="shadow-medium">
-                  Request a Demo
-                </Button>
+                <CTAButton variant="demo" size="lg" />
               </div>
             </div>
 
@@ -194,9 +197,7 @@ const Home = () => {
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
             See how SYSKITA can transform your business with centralized reporting and real-time insights.
           </p>
-          <Button variant="cta" size="lg" className="shadow-medium">
-            Book a Demo Today
-          </Button>
+          <CTAButton variant="book" size="lg" />
         </div>
       </section>
     </div>

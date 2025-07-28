@@ -1,6 +1,13 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
+
 const VisionMission = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="SYSKITA Vision & Mission | Our Purpose"
+        description="Discover SYSKITA's vision to transform business operations through centralized data and insights."
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">

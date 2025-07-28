@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { SEOHead } from "@/components/SEOHead";
 
 const Blog = () => {
   const blogPosts = [
@@ -56,6 +57,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="SYSKITA Insights | Tips, News & Case Studies"
+        description="Read expert tips, company news, and case studies on operations, reporting, and scaling with SYSKITA."
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">
