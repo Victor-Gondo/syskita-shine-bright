@@ -12,34 +12,18 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Centralized{" "}
-                  <span className="text-primary-light">Sales, Ops & Finance</span>{" "}
-                  Reporting
+                  Your Single Source of Truth for{" "}
+                  <span className="text-secondary">Operations</span>
                 </h1>
                 <p className="text-xl text-primary-foreground/90 max-w-lg">
-                  Streamline your business operations with SYSKITA's powerful B2B SaaS platform. 
-                  Get real-time insights across all your departments.
+                  SYSKITA unifies sales, operations, finance, and production reporting into one powerful dashboard.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-medium">
-                  Start Free Trial
+                <Button variant="cta" size="lg" className="shadow-medium">
+                  Request a Demo
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                  Watch Demo
-                </Button>
-              </div>
-
-              <div className="flex items-center space-x-8 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span>No setup fees</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span>14-day free trial</span>
-                </div>
               </div>
             </div>
 
@@ -54,15 +38,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Overview */}
+      {/* Product Overview - 3 Key Benefits */}
       <section className="py-20 bg-gradient-subtle">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Everything You Need to Scale Your Business
+              Three Key Benefits That Transform Your Business
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Powerful features designed for modern B2B companies to streamline operations and drive growth.
+              Everything you need to streamline operations and make smarter decisions.
             </p>
           </div>
 
@@ -70,11 +54,13 @@ const Home = () => {
             <Card className="border-border/50 shadow-soft hover:shadow-medium transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary rounded"></div>
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Sales Analytics</h3>
+                <h3 className="text-xl font-semibold mb-4">Centralized Reporting</h3>
                 <p className="text-muted-foreground">
-                  Real-time sales performance tracking with advanced analytics and forecasting capabilities.
+                  All your data in one place.
                 </p>
               </CardContent>
             </Card>
@@ -82,11 +68,13 @@ const Home = () => {
             <Card className="border-border/50 shadow-soft hover:shadow-medium transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary rounded"></div>
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Operations Management</h3>
+                <h3 className="text-xl font-semibold mb-4">Smarter Decisions</h3>
                 <p className="text-muted-foreground">
-                  Streamline your operational processes with automated workflows and reporting.
+                  Real-time dashboards for teams.
                 </p>
               </CardContent>
             </Card>
@@ -94,11 +82,13 @@ const Home = () => {
             <Card className="border-border/50 shadow-soft hover:shadow-medium transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary rounded"></div>
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                  </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Financial Reporting</h3>
+                <h3 className="text-xl font-semibold mb-4">Seamless Workflows</h3>
                 <p className="text-muted-foreground">
-                  Comprehensive financial insights with customizable dashboards and KPI tracking.
+                  Connect sales, finance, and ops easily.
                 </p>
               </CardContent>
             </Card>
@@ -106,17 +96,106 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* How It Works - 3 Steps */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              How It Works
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Three simple steps to transform your operations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Input & Sync</h3>
+              <p className="text-muted-foreground">
+                Input & sync your data securely.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Track & Manage</h3>
+              <p className="text-muted-foreground">
+                Track POs, invoices, and targets with ease.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Insights & Action</h3>
+              <p className="text-muted-foreground">
+                Get insights and take action instantly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Section */}
+      <section className="py-20 bg-gradient-subtle">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Trusted by Industry Leaders
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Join hundreds of companies who trust SYSKITA to power their operations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center opacity-60">
+            {/* Placeholder for client logos */}
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="flex items-center justify-center">
+                <div className="w-32 h-16 bg-muted border border-border rounded-lg flex items-center justify-center">
+                  <span className="text-muted-foreground font-medium">Client Logo {i}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Testimonial placeholder */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <Card className="border-border/50 shadow-soft">
+              <CardContent className="p-8 text-center">
+                <blockquote className="text-xl italic text-muted-foreground mb-6">
+                  "SYSKITA has transformed our operations completely. Having all our data in one place has made decision-making so much faster and more accurate."
+                </blockquote>
+                <div className="flex items-center justify-center space-x-4">
+                  <div className="w-12 h-12 bg-muted rounded-full"></div>
+                  <div className="text-left">
+                    <p className="font-semibold">Sarah Johnson</p>
+                    <p className="text-sm text-muted-foreground">Operations Director, TechCorp</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Final Call-to-Action Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Transform Your Business Operations?
+            Ready to simplify your operations?
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Join thousands of companies already using SYSKITA to streamline their processes and drive growth.
+            See how SYSKITA can transform your business with centralized reporting and real-time insights.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-medium">
-            Get Started Today
+          <Button variant="cta" size="lg" className="shadow-medium">
+            Book a Demo Today
           </Button>
         </div>
       </section>
