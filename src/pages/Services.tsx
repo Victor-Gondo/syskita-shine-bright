@@ -3,6 +3,7 @@ import { CTAButton } from "@/components/ui/cta-button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, MapPin, Camera, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const subBrands = [
@@ -84,9 +85,15 @@ const Services = () => {
                   <CardDescription className="mb-6 text-base leading-relaxed">
                     {brand.description}
                   </CardDescription>
-                  <Button variant="outline" className="w-full">
-                    {brand.buttonText}
-                  </Button>
+                  {index === 0 ? (
+                    <Button variant="outline" className="w-full" asChild>
+                      <Link to="/services/merq">{brand.buttonText}</Link>
+                    </Button>
+                  ) : (
+                    <Button variant="outline" className="w-full">
+                      {brand.buttonText}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}

@@ -9,6 +9,7 @@ import About from "./pages/About";
 import VisionMission from "./pages/VisionMission";
 import Team from "./pages/Team";
 import Services from "./pages/Services";
+import MERQ from "./pages/MERQ";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/vision-mission" element={<VisionMission />} />
             <Route path="/team" element={<Team />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/merq" element={<MERQ />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
