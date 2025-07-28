@@ -14,6 +14,7 @@ import MERQFeatures from "./pages/MERQFeatures";
 import MERQUseCases from "./pages/MERQUseCases";
 import MERQIntegrations from "./pages/MERQIntegrations";
 import MERQPricing from "./pages/MERQPricing";
+import CaseStudies from "./pages/CaseStudies";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/merq/use-cases" element={<MERQUseCases />} />
             <Route path="/merq/integrations" element={<MERQIntegrations />} />
             <Route path="/merq/pricing" element={<MERQPricing />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
