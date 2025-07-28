@@ -8,7 +8,7 @@ const Home = () => {
     <div className="min-h-screen">
       <SEOHead 
         title="SYSKITA | Centralized Sales, Ops & Finance Reporting Platform"
-        description="Unify your operations with SYSKITA – the all-in-one platform for sales, finance, and production reporting."
+        description="SYSKITA is the all-in-one platform that unifies sales, finance, and operations reporting for growing businesses."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-hero text-primary-foreground py-20 lg:py-32">
@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Centralized Reporting</h3>
                 <p className="text-muted-foreground">
-                  All your data in one place.
+                  All your data in one platform.
                 </p>
               </CardContent>
             </Card>
@@ -77,7 +77,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Smarter Decisions</h3>
                 <p className="text-muted-foreground">
-                  Real-time dashboards for teams.
+                  Real-time dashboards for your teams.
                 </p>
               </CardContent>
             </Card>
@@ -91,7 +91,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Seamless Workflows</h3>
                 <p className="text-muted-foreground">
-                  Connect sales, finance, and ops easily.
+                  Connect sales, finance, and ops effortlessly.
                 </p>
               </CardContent>
             </Card>
@@ -128,7 +128,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Track & Manage</h3>
               <p className="text-muted-foreground">
-                Track POs, invoices, and targets with ease.
+                Track POs, invoices, and KPIs with ease.
               </p>
             </div>
 
