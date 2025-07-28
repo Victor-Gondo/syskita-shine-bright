@@ -9,8 +9,8 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Core backgrounds and text */
-    --background: 0 0% 100%;
-    --foreground: 210 11% 15%;
+    --background: 210 20% 98%;
+    --foreground: 220 26% 14%;
 
     /* Card and surface colors */
     --card: 0 0% 100%;
@@ -19,22 +19,22 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 11% 15%;
 
-    /* Brand colors - Professional B2B SaaS */
-    --primary: 214 84% 56%;
+    /* Brand colors - SYSKITA Deep Blue Primary */
+    --primary: 222 84% 33%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 214 84% 66%;
-    --primary-dark: 214 84% 46%;
+    --primary-light: 222 84% 43%;
+    --primary-dark: 222 84% 23%;
 
-    /* Secondary - Clean grays */
-    --secondary: 210 17% 96%;
-    --secondary-foreground: 210 11% 15%;
+    /* Secondary - Sky Blue */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Muted backgrounds */
     --muted: 210 17% 96%;
-    --muted-foreground: 210 11% 46%;
+    --muted-foreground: 220 13% 46%;
 
-    /* Accent - Success green for CTAs */
-    --accent: 142 71% 45%;
+    /* Accent - Soft Orange for CTAs */
+    --accent: 21 94% 52%;
     --accent-foreground: 0 0% 100%;
 
     /* Status colors */
@@ -44,17 +44,17 @@ All colors MUST be HSL.
     /* Borders and inputs */
     --border: 210 20% 90%;
     --input: 210 20% 90%;
-    --ring: 214 84% 56%;
+    --ring: 222 84% 33%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 66%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(214 84% 46%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 17% 98%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(222 84% 33%), hsl(217 91% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 33%) 0%, hsl(217 91% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 17% 95%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 24px -4px hsl(214 84% 56% / 0.1);
-    --shadow-medium: 0 8px 32px -8px hsl(214 84% 56% / 0.15);
-    --shadow-strong: 0 16px 48px -12px hsl(214 84% 56% / 0.2);
+    --shadow-soft: 0 4px 24px -4px hsl(222 84% 33% / 0.1);
+    --shadow-medium: 0 8px 32px -8px hsl(222 84% 33% / 0.15);
+    --shadow-strong: 0 16px 48px -12px hsl(222 84% 33% / 0.2);
 
     --radius: 0.5rem;
 

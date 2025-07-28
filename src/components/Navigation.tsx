@@ -1,8 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -43,21 +50,54 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button className="bg-gradient-primary hover:shadow-medium transition-all duration-300">
+            <Button variant="cta" className="hover:shadow-medium transition-all duration-300">
               Get Started
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" className="md:hidden">
-            <span className="sr-only">Menu</span>
-            <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-              <div className="w-6 h-0.5 bg-foreground"></div>
-              <div className="w-6 h-0.5 bg-foreground"></div>
-              <div className="w-6 h-0.5 bg-foreground"></div>
-            </div>
+          <Button 
+            variant="ghost" 
+            className="md:hidden"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </Button>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <div className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                    location.pathname === item.path
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Button 
+                variant="cta" 
+                className="w-fit mt-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Get Started
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
