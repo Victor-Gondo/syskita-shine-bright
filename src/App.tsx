@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import VisionMission from "./pages/VisionMission";
 import Team from "./pages/Team";
+import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/vision-mission" element={<VisionMission />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
