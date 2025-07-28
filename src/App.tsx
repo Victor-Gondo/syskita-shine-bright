@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import MERQ from "./pages/MERQ";
 import MERQFeatures from "./pages/MERQFeatures";
 import MERQUseCases from "./pages/MERQUseCases";
+import MERQIntegrations from "./pages/MERQIntegrations";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/merq" element={<MERQ />} />
             <Route path="/merq/features" element={<MERQFeatures />} />
             <Route path="/merq/use-cases" element={<MERQUseCases />} />
+            <Route path="/merq/integrations" element={<MERQIntegrations />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
