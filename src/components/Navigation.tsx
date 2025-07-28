@@ -7,26 +7,19 @@ import { CTAButton } from "@/components/ui/cta-button";
 const Navigation = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const toggleProductsDropdown = () => {
-    setIsProductsDropdownOpen(!isProductsDropdownOpen);
+  const handleDropdownToggle = (dropdown: string) => {
+    setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Vision & Mission", path: "/vision-mission" },
-    { name: "Our Team", path: "/team" },
-    { name: "Case Studies", path: "/case-studies" },
-    { name: "Roadmap", path: "/roadmap" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Blog", path: "/blog" },
-  ];
+  const closeAllDropdowns = () => {
+    setOpenDropdown(null);
+  };
 
   const productItems = [
     { name: "MERQ – Frontliner Management", path: "/merq" },
@@ -34,9 +27,21 @@ const Navigation = () => {
     { name: "Flow – Workflow Automation", path: "/flow" },
   ];
 
+  const companyItems = [
+    { name: "About Us", path: "/about" },
+    { name: "Vision & Mission", path: "/vision-mission" },
+    { name: "Our Team", path: "/team" },
+    { name: "Case Studies", path: "/case-studies" },
+  ];
+
+  const solutionsItems = [
+    { name: "Roadmap", path: "/roadmap" },
+    { name: "FAQ", path: "/faq" },
+  ];
+
   return (
-    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50" onClick={closeAllDropdowns}>
+      <div className="container mx-auto px-4 py-4" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
@@ -48,31 +53,29 @@ const Navigation = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {/* Home */}
+            <Link
+              to="/"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/"
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              }`}
+            >
+              Home
+            </Link>
             
             {/* Products Dropdown */}
             <div className="relative">
               <button
-                onClick={toggleProductsDropdown}
+                onClick={() => handleDropdownToggle('products')}
                 className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
               >
                 Products
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               
-              {isProductsDropdownOpen && (
+              {openDropdown === 'products' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg z-50">
                   <div className="py-2">
                     {productItems.map((item) => (
@@ -80,7 +83,7 @@ const Navigation = () => {
                         key={item.path}
                         to={item.path}
                         className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent transition-colors"
-                        onClick={() => setIsProductsDropdownOpen(false)}
+                        onClick={closeAllDropdowns}
                       >
                         {item.name}
                       </Link>
@@ -89,6 +92,74 @@ const Navigation = () => {
                 </div>
               )}
             </div>
+
+            {/* Company Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => handleDropdownToggle('company')}
+                className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+              >
+                Company
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              
+              {openDropdown === 'company' && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-background border border-border rounded-lg shadow-lg z-50">
+                  <div className="py-2">
+                    {companyItems.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent transition-colors"
+                        onClick={closeAllDropdowns}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Solutions Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => handleDropdownToggle('solutions')}
+                className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+              >
+                Solutions
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              
+              {openDropdown === 'solutions' && (
+                <div className="absolute top-full left-0 mt-2 w-36 bg-background border border-border rounded-lg shadow-lg z-50">
+                  <div className="py-2">
+                    {solutionsItems.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent transition-colors"
+                        onClick={closeAllDropdowns}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Blog */}
+            <Link
+              to="/blog"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/blog"
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              }`}
+            >
+              Blog
+            </Link>
           </div>
 
           {/* CTA Button */}
@@ -115,20 +186,18 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    location.pathname === item.path
-                      ? "text-primary"
-                      : "text-muted-foreground"
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {/* Home */}
+              <Link
+                to="/"
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === "/"
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
               
               {/* Mobile Products Section */}
               <div className="pt-2 border-t border-border">
@@ -144,6 +213,49 @@ const Navigation = () => {
                   </Link>
                 ))}
               </div>
+
+              {/* Mobile Company Section */}
+              <div className="pt-2 border-t border-border">
+                <p className="text-sm font-medium text-foreground mb-2">Company</p>
+                {companyItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block text-sm text-muted-foreground hover:text-primary pl-4 py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Mobile Solutions Section */}
+              <div className="pt-2 border-t border-border">
+                <p className="text-sm font-medium text-foreground mb-2">Solutions</p>
+                {solutionsItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="block text-sm text-muted-foreground hover:text-primary pl-4 py-1"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Blog */}
+              <Link
+                to="/blog"
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === "/blog"
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
               
               <CTAButton 
                 variant="book" 
