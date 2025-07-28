@@ -1,39 +1,50 @@
 import { SEOHead } from "@/components/SEOHead";
 import { CTAButton } from "@/components/ui/cta-button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, MapPin, Camera, ClipboardList, Users, BarChart3, Shield, Smartphone, Server, Cloud, Monitor, Code } from "lucide-react";
+import { CheckCircle, MapPin, Camera, ClipboardList, Users, BarChart3, Shield, Smartphone, Server, Cloud, Monitor, Code, Navigation, Route, AlertTriangle, Clock, TrendingUp, Zap } from "lucide-react";
 
 const MERQ = () => {
   const keyFeatures = [
     {
+      icon: Navigation,
+      title: "Real-Time Live Location Tracking",
+      description: "Monitor your field team's exact location every 30 seconds with GPS accuracy down to 3 meters. See who's where, when they arrived, and how long they've been there.",
+      highlight: true
+    },
+    {
+      icon: Route,
+      title: "Smart Route Optimization & Planning",
+      description: "AI-powered route planning that optimizes travel time and fuel costs. Track actual vs planned routes with detailed analytics."
+    },
+    {
       icon: MapPin,
-      title: "GPS Check‑ins & Proof of Visit",
-      description: "Real-time verification with geofencing."
+      title: "Geofence Alerts & Territory Management",
+      description: "Set up virtual boundaries around stores and territories. Get instant alerts when team members enter or leave designated areas."
+    },
+    {
+      icon: Clock,
+      title: "Complete Location History & Analytics",
+      description: "Access 90-day location history with detailed timelines, distance traveled, time spent at each location, and productivity insights."
     },
     {
       icon: Camera,
       title: "Photo Upload & Before/After Validation", 
-      description: "Capture shelf, display, and promo compliance visually."
+      description: "Capture shelf, display, and promo compliance visually with GPS-stamped photos for complete audit trails."
     },
     {
       icon: ClipboardList,
       title: "Stock & Sales Data Entry",
-      description: "Log stock levels, expiry dates, competitor pricing, and sales orders."
+      description: "Log stock levels, expiry dates, competitor pricing, and sales orders with location verification."
     },
     {
       icon: Users,
       title: "Dynamic Forms & Surveys",
-      description: "Admins can create custom forms for different roles and projects."
+      description: "Create custom forms for different roles and projects with location-based triggers and conditions."
     },
     {
-      icon: BarChart3,
-      title: "Live Location & Attendance",
-      description: "Clock-in/out, track location every 5 minutes, view 30-day history."
-    },
-    {
-      icon: Monitor,
-      title: "Integrated Dashboards",
-      description: "Managers approve/reject submissions and track KPIs in real-time."
+      icon: TrendingUp,
+      title: "Live Dashboard & Performance Analytics",
+      description: "Real-time visibility into team performance, location patterns, and productivity metrics with predictive insights."
     }
   ];
 
@@ -56,12 +67,14 @@ const MERQ = () => {
   ];
 
   const comparisonData = [
-    { typical: "Manual data collection", merq: "Offline-first Android app with auto-sync" },
-    { typical: "Limited reporting", merq: "Real-time dashboards integrated with SYSKITA" },
-    { typical: "No GPS verification", merq: "Geofenced check-in/out + spoof detection" },
-    { typical: "Static forms", merq: "Dynamic, role-based form creation" },
-    { typical: "No integrated approvals", merq: "Instant manager approval/rejection workflows" },
-    { typical: "No API or export flexibility", merq: "Full REST API support + CSV/PDF exporting" }
+    { typical: "Basic GPS check-ins only", merq: "Real-time location tracking every 30 seconds with 3m accuracy" },
+    { typical: "No location history", merq: "90-day detailed location history with analytics and insights" },
+    { typical: "Manual route planning", merq: "AI-powered route optimization with live traffic updates" },
+    { typical: "Limited reporting", merq: "Real-time dashboards with location intelligence and predictive analytics" },
+    { typical: "No geofencing capabilities", merq: "Advanced geofencing with custom alerts and territory management" },
+    { typical: "Basic attendance tracking", merq: "Comprehensive time-at-location analytics with productivity scoring" },
+    { typical: "No location fraud prevention", merq: "Advanced spoof detection with movement pattern analysis" },
+    { typical: "Static forms", merq: "Location-triggered dynamic forms with conditional logic" }
   ];
 
   const securityFeatures = [
@@ -110,10 +123,10 @@ const MERQ = () => {
       <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            MERQ – Frontliner Management Made Simple
+            MERQ – Real-Time Field Team Intelligence
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-            A powerful mobile + web solution to manage merchandisers, sales reps, and field teams – fully integrated with SYSKITA.
+            Revolutionary field management with live location tracking, route optimization, and AI-powered analytics. Know exactly where your team is and what they're accomplishing – in real-time.
           </p>
           <CTAButton variant="demo" size="lg" />
         </div>
@@ -125,24 +138,35 @@ const MERQ = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">What is MERQ?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              MERQ is SYSKITA's dedicated frontliner management platform that helps brands execute perfectly at retail level. From GPS-verified store visits to photo-based reporting and real-time dashboards, MERQ ensures total field visibility, compliance, and performance tracking.
+              MERQ is SYSKITA's revolutionary field management platform that transforms how brands manage their frontline teams. With industry-leading real-time location tracking, AI-powered route optimization, and comprehensive analytics, MERQ provides unprecedented visibility into field operations. From GPS-verified store visits to intelligent performance insights, MERQ ensures perfect execution at every retail touchpoint.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Key Features Section */}
-      <section className="py-20 bg-secondary/5">
+      {/* Location Intelligence Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Location Intelligence at Your Fingertips</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Experience the most advanced field tracking technology. MERQ's real-time location system provides unprecedented visibility into your team's activities with military-grade accuracy and AI-powered insights.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {keyFeatures.map((feature, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300">
+              <Card key={index} className={`hover:shadow-lg transition-all duration-300 ${feature.highlight ? 'ring-2 ring-primary/20 bg-primary/5' : ''}`}>
                 <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.highlight ? 'bg-primary text-primary-foreground' : 'bg-primary/10'}`}>
+                    <feature.icon className={`w-6 h-6 ${feature.highlight ? 'text-primary-foreground' : 'text-primary'}`} />
                   </div>
                   <CardTitle className="text-lg">{feature.title}</CardTitle>
+                  {feature.highlight && (
+                    <div className="flex items-center gap-1 mt-2">
+                      <Zap className="w-4 h-4 text-primary" />
+                      <span className="text-xs font-medium text-primary uppercase tracking-wide">Featured</span>
+                    </div>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base">
@@ -151,6 +175,50 @@ const MERQ = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Location Features Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Advanced Location Capabilities</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Go beyond basic GPS tracking with intelligent features that transform raw location data into actionable business insights.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="text-center p-6 rounded-lg bg-primary/5 border border-primary/10">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <AlertTriangle className="w-8 h-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Emergency Response</h3>
+              <p className="text-muted-foreground">
+                Panic button with instant location sharing to managers and emergency contacts. Automatic alerts for unusual movement patterns or prolonged inactivity.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 rounded-lg bg-secondary/5 border border-secondary/10">
+              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-8 h-8 text-secondary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Predictive Analytics</h3>
+              <p className="text-muted-foreground">
+                AI analyzes movement patterns to predict optimal visit times, identify territory gaps, and suggest performance improvements based on location data.
+              </p>
+            </div>
+            
+            <div className="text-center p-6 rounded-lg bg-accent/5 border border-accent/10">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-accent-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Anti-Fraud Protection</h3>
+              <p className="text-muted-foreground">
+                Advanced algorithms detect GPS spoofing, fake check-ins, and suspicious movement patterns. ML-powered verification ensures authentic field activities.
+              </p>
+            </div>
           </div>
         </div>
       </section>
