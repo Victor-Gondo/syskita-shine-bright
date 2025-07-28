@@ -1,57 +1,63 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/SEOHead";
+import { CTAButton } from "@/components/ui/cta-button";
 
 const Blog = () => {
   const blogPosts = [
     {
-      title: "5 Ways to Improve Retail Execution with Centralized Data",
-      excerpt: "Discover actionable strategies to enhance your retail operations through unified data management and real-time insights.",
-      category: "Tips & Insights",
-      readTime: "6 min read",
-      date: "March 15, 2024"
-    },
-    {
-      title: "The Future of FMCG Operations: Why Visibility Matters",
-      excerpt: "Explore how operational visibility is transforming the FMCG industry and driving competitive advantage.",
-      category: "Company News",
-      readTime: "5 min read",
-      date: "March 12, 2024"
-    },
-    {
-      title: "Case Study: How SYSKITA Helped a Brand Cut Reporting Time by 70%",
-      excerpt: "Real-world success story showing how centralized reporting transformed a major FMCG brand's operations.",
-      category: "Case Studies",
-      readTime: "8 min read",
-      date: "March 10, 2024"
-    },
-    {
-      title: "Building Better Dashboards: Essential Metrics for FMCG Teams",
-      excerpt: "Learn which KPIs matter most for FMCG operations and how to visualize them effectively.",
+      title: "5 Ways FMCG Brands Can Improve In-Store Execution with Tech",
+      excerpt: "Discover how modern technology solutions are revolutionizing in-store execution for FMCG brands. Learn practical strategies to enhance merchandising, compliance, and sales performance.",
       category: "Tips & Insights",
       readTime: "7 min read",
-      date: "March 8, 2024"
+      date: "March 20, 2024",
+      metaTitle: "5 Ways FMCG Brands Can Improve In-Store Execution with Tech | SYSKITA",
+      metaDescription: "Learn how FMCG brands can leverage technology to improve in-store execution, boost compliance, and drive sales performance with practical strategies and real-world examples."
     },
     {
-      title: "SYSKITA Platform Update: New Analytics Features Now Available",
-      excerpt: "Introducing enhanced analytics capabilities that provide deeper insights into your business operations.",
-      category: "Company News",
-      readTime: "4 min read",
-      date: "March 5, 2024"
-    },
-    {
-      title: "From Spreadsheets to Smart Dashboards: A Digital Transformation Story",
-      excerpt: "Follow one company's journey from manual reporting to automated, intelligent business insights.",
-      category: "Case Studies",
+      title: "How GPS-Based Merchandising Boosts Compliance",
+      excerpt: "Explore the power of GPS verification in ensuring merchandising compliance. See how location-based technology transforms field team accountability and execution quality.",
+      category: "Technology",
       readTime: "6 min read",
-      date: "March 1, 2024"
+      date: "March 18, 2024",
+      metaTitle: "How GPS-Based Merchandising Boosts Compliance | SYSKITA Blog",
+      metaDescription: "Discover how GPS-based merchandising technology improves compliance rates, ensures accurate store visits, and enhances field team accountability."
+    },
+    {
+      title: "Why Real-Time Dashboards Are a Game Changer for Sales Teams",
+      excerpt: "Real-time dashboards provide instant visibility into sales performance and field operations. Learn how immediate data access transforms decision-making and team productivity.",
+      category: "Sales & Analytics",
+      readTime: "8 min read",
+      date: "March 15, 2024",
+      metaTitle: "Why Real-Time Dashboards Are a Game Changer for Sales Teams | SYSKITA",
+      metaDescription: "Learn how real-time dashboards transform sales team performance by providing instant visibility, improving decision-making, and boosting productivity."
+    },
+    {
+      title: "PDP Law Compliance for SaaS in Indonesia – What You Need to Know",
+      excerpt: "Navigate Indonesia's Personal Data Protection Law (UU 27/2022) requirements for SaaS platforms. Essential compliance guidelines for data security and privacy protection.",
+      category: "Compliance & Legal",
+      readTime: "10 min read",
+      date: "March 12, 2024",
+      metaTitle: "PDP Law Compliance for SaaS in Indonesia – Complete Guide | SYSKITA",
+      metaDescription: "Complete guide to Indonesia's Personal Data Protection Law (UU 27/2022) compliance for SaaS platforms. Essential requirements and best practices."
+    },
+    {
+      title: "Case Study: How a Brand Reduced Reporting Time by 70% with MERQ",
+      excerpt: "Real success story of a major brand that transformed their reporting process using MERQ's automated field management solution. See the complete transformation journey.",
+      category: "Case Studies",
+      readTime: "9 min read",
+      date: "March 10, 2024",
+      metaTitle: "Case Study: 70% Reporting Time Reduction with MERQ | SYSKITA Success Stories",
+      metaDescription: "Real case study showing how a major brand reduced reporting time by 70% using MERQ's field management solution. Complete transformation details and results."
     }
   ];
 
   const categories = [
     "All Posts",
-    "Company News", 
     "Tips & Insights",
+    "Technology", 
+    "Sales & Analytics",
+    "Compliance & Legal",
     "Case Studies"
   ];
 
@@ -82,8 +88,13 @@ const Blog = () => {
             {blogPosts.map((post, index) => (
               <Card key={index} className="border-border/50 shadow-soft hover:shadow-medium transition-all duration-300 h-full">
                 <CardContent className="p-0">
-                  <div className="bg-muted h-48 flex items-center justify-center">
-                    <span className="text-muted-foreground">Blog Post Image</span>
+                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 h-48 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                        <span className="text-2xl">📊</span>
+                      </div>
+                      <span className="text-muted-foreground text-sm">Featured Image</span>
+                    </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
@@ -98,11 +109,20 @@ const Blog = () => {
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center justify-between">
+                    <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-1">Meta Title:</p>
+                      <p className="text-xs font-medium line-clamp-1">{post.metaTitle}</p>
+                      <p className="text-xs text-muted-foreground mb-1 mt-2">Meta Description:</p>
+                      <p className="text-xs line-clamp-2">{post.metaDescription}</p>
+                    </div>
+                    <div className="flex items-center justify-between mb-4">
                       <span className="text-sm text-muted-foreground">{post.date}</span>
                       <Button variant="ghost" size="sm" className="text-primary hover:text-primary">
                         Read More →
                       </Button>
+                    </div>
+                    <div className="pt-4 border-t border-border">
+                      <CTAButton variant="demo" className="w-full text-sm py-2" />
                     </div>
                   </div>
                 </CardContent>
