@@ -12,11 +12,6 @@ const Team = () => {
       name: "Victor Gondo Poetra",
       role: "CTO & Co-Founder", 
       bio: "Oversees technology and product development."
-    },
-    {
-      name: "Lina Putri",
-      role: "Head of Customer Success",
-      bio: "Ensures every client succeeds with SYSKITA."
     }
   ];
 
