@@ -37,6 +37,8 @@ const Navigation = () => {
   const solutionsItems = [
     { name: "Roadmap", path: "/roadmap" },
     { name: "FAQ", path: "/faq" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (

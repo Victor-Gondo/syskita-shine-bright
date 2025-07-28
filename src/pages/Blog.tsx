@@ -1,9 +1,18 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SEOHead } from "@/components/SEOHead";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import { CTAButton } from "@/components/ui/cta-button";
+import { SEOHead } from "@/components/SEOHead";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Posts");
+  const [searchQuery, setSearchQuery] = useState("");
+
   const blogPosts = [
     {
       title: "5 Ways FMCG Brands Can Improve In-Store Execution with Tech",
