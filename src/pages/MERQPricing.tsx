@@ -8,7 +8,7 @@ const MERQPricing = () => {
     {
       name: "Starter",
       description: "Basic features for small teams",
-      price: "To be disclosed",
+      price: "IDR 80,000",
       features: [
         "Up to 10 field users",
         "GPS check-ins & geofencing",
@@ -23,7 +23,7 @@ const MERQPricing = () => {
     {
       name: "Professional",
       description: "Full feature set + dashboards",
-      price: "To be disclosed",
+      price: "IDR 125,000",
       features: [
         "Up to 50 field users",
         "All Starter features",
