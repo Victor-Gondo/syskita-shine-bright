@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CTAButton } from "@/components/ui/cta-button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { MobileLanguageSwitcher } from "@/components/MobileLanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
@@ -173,19 +174,21 @@ const Navigation = () => {
             <CTAButton variant="book" />
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button 
-            variant="ghost" 
-            className="md:hidden"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </Button>
+          {/* Mobile Language Switcher & Menu Button */}
+          <div className="md:hidden flex items-center gap-3">
+            <MobileLanguageSwitcher />
+            <Button 
+              variant="ghost" 
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -263,11 +266,6 @@ const Navigation = () => {
                 {t("nav.blog")}
               </Link>
               
-              {/* Mobile Language Switcher */}
-              <div className="pt-2 border-t border-border">
-                <p className="text-sm font-medium text-foreground mb-2">Language / Bahasa</p>
-                <LanguageSwitcher isMobile={true} />
-              </div>
               
               <CTAButton 
                 variant="book" 
