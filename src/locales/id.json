@@ -19,26 +19,60 @@
     "visionMission": "Visi & Misi"
   },
   "home": {
-    "hero": {
-      "title": "Transformasi Bisnis Anda dengan Solusi Cerdas",
-      "subtitle": "Memberdayakan organisasi dengan teknologi terdepan untuk mengoptimalkan operasi, meningkatkan produktivitas, dan mendorong pertumbuhan berkelanjutan di era digital.",
-      "cta": "Mulai Hari Ini"
+    "seo": {
+      "title": "SYSKITA | Platform Pelaporan Terpusat Sales, Ops & Tim Lapangan",
+      "description": "SYSKITA membantu brand FMCG dan retail mengelola pelaporan penjualan, eksekusi lapangan, persetujuan, kepatuhan, dan pelacakan GPS real-time dengan dashboard real-time."
     },
-    "features": {
-      "title": "Mengapa Memilih SYSKITA?",
-      "subtitle": "Temukan fitur-fitur canggih yang menjadikan SYSKITA pilihan utama untuk bisnis modern",
-      "automation": {
-        "title": "Otomasi Cerdas",
-        "description": "Sederhanakan alur kerja Anda dengan otomasi cerdas yang mengurangi tugas manual dan meningkatkan efisiensi."
-      },
-      "analytics": {
-        "title": "Analitik Lanjutan",
-        "description": "Dapatkan wawasan berharga dengan dashboard analitik komprehensif dan pelaporan real-time."
-      },
+    "hero": {
+      "title": "Sentralisasi Penjualan, Operasi, dan",
+      "titleHighlight": "Eksekusi Lapangan",
+      "subtitle": "SYSKITA adalah platform all-in-one untuk pelaporan penjualan, manajemen tim lapangan, otomasi alur kerja, dan pelacakan GPS real-time – dibangun untuk eksekusi FMCG dan retail.",
+      "altText": "Pratinjau Dashboard SYSKITA"
+    },
+    "benefits": {
+      "title": "Tiga Manfaat Utama yang Mentransformasi Bisnis Anda",
+      "subtitle": "Semua yang Anda butuhkan untuk merampingkan operasi dan membuat keputusan yang lebih cerdas.",
       "integration": {
-        "title": "Integrasi Mulus",
-        "description": "Terhubung dengan alat dan sistem yang ada untuk ekosistem bisnis yang terpadu."
+        "title": "Data Lapangan & Penjualan Terintegrasi",
+        "description": "Kelola merchandiser, sales rep, dan operasi dalam satu platform."
+      },
+      "tracking": {
+        "title": "Dashboard Real-Time & Pelacakan GPS Live",
+        "description": "Monitor kunjungan, pesanan, persetujuan, dan cakupan lapangan saat terjadi."
+      },
+      "automation": {
+        "title": "Alur Kerja Otomatis",
+        "description": "Persetujuan, siklus PO, dan pelaporan dibuat mulus."
       }
+    },
+    "howItWorks": {
+      "title": "Cara Kerjanya",
+      "subtitle": "Tiga langkah sederhana untuk mentransformasi operasi Anda.",
+      "step1": {
+        "title": "Log Data",
+        "description": "Frontliner dan manajer mencatat data melalui aplikasi mobile dan web."
+      },
+      "step2": {
+        "title": "Sinkronisasi Otomatis",
+        "description": "Kunjungan terverifikasi GPS, ping lokasi live setiap 5 menit, upload foto, pesanan, dan data stok tersinkronisasi otomatis."
+      },
+      "step3": {
+        "title": "Setujui & Monitor",
+        "description": "Manajer menyetujui pengiriman dan mengakses dashboard real-time dan laporan."
+      }
+    },
+    "socialProof": {
+      "title": "Dipercaya oleh Pemimpin Industri",
+      "subtitle": "Bergabunglah dengan ratusan perusahaan yang mempercayai SYSKITA untuk menggerakkan operasi mereka.",
+      "testimonial": {
+        "quote": "SYSKITA telah mentransformasi operasi kami sepenuhnya. Memiliki semua data kami di satu tempat telah membuat pengambilan keputusan jauh lebih cepat dan akurat.",
+        "author": "Sarah Johnson",
+        "role": "Direktur Operasi, TechCorp"
+      }
+    },
+    "finalCta": {
+      "title": "Satukan Operasi Anda, Berdayakan Tim Anda.",
+      "subtitle": "Ambil kendali operasi lapangan Anda dengan pelacakan GPS live, alur kerja otomatis, dan pelaporan real-time."
     }
   },
   "pricing": {

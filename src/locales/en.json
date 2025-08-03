@@ -19,26 +19,60 @@
     "visionMission": "Vision & Mission"
   },
   "home": {
-    "hero": {
-      "title": "Transform Your Business with Intelligent Solutions",
-      "subtitle": "Empowering organizations with cutting-edge technology to optimize operations, enhance productivity, and drive sustainable growth in the digital age.",
-      "cta": "Get Started Today"
+    "seo": {
+      "title": "SYSKITA | Centralized Sales, Ops & Field Team Reporting Platform",
+      "description": "SYSKITA helps FMCG and retail brands manage sales reporting, field execution, approvals, compliance, and live GPS tracking with real-time dashboards."
     },
-    "features": {
-      "title": "Why Choose SYSKITA?",
-      "subtitle": "Discover the powerful features that make SYSKITA the preferred choice for modern businesses",
-      "automation": {
-        "title": "Smart Automation",
-        "description": "Streamline your workflows with intelligent automation that reduces manual tasks and increases efficiency."
-      },
-      "analytics": {
-        "title": "Advanced Analytics",
-        "description": "Gain valuable insights with our comprehensive analytics dashboard and real-time reporting."
-      },
+    "hero": {
+      "title": "Centralize Your Sales, Operations, and",
+      "titleHighlight": "Field Execution",
+      "subtitle": "SYSKITA is the all-in-one platform for sales reporting, field team management, workflow automation, and live GPS tracking – built for FMCG and retail execution.",
+      "altText": "SYSKITA Dashboard Preview"
+    },
+    "benefits": {
+      "title": "Three Key Benefits That Transform Your Business",
+      "subtitle": "Everything you need to streamline operations and make smarter decisions.",
       "integration": {
-        "title": "Seamless Integration",
-        "description": "Connect with your existing tools and systems for a unified business ecosystem."
+        "title": "Integrated Field & Sales Data",
+        "description": "Manage merchandisers, sales reps, and operations in one platform."
+      },
+      "tracking": {
+        "title": "Real-Time Dashboards & Live GPS Tracking",
+        "description": "Monitor visits, orders, approvals, and field coverage as they happen."
+      },
+      "automation": {
+        "title": "Automated Workflows",
+        "description": "Approvals, PO lifecycles, and reporting made seamless."
       }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Three simple steps to transform your operations.",
+      "step1": {
+        "title": "Log Data",
+        "description": "Frontliners and managers log data via mobile and web apps."
+      },
+      "step2": {
+        "title": "Auto-Sync",
+        "description": "GPS-verified visits, live location pings every 5 minutes, photo uploads, orders, and stock data sync automatically."
+      },
+      "step3": {
+        "title": "Approve & Monitor",
+        "description": "Managers approve submissions and access real-time dashboards and reports."
+      }
+    },
+    "socialProof": {
+      "title": "Trusted by Industry Leaders",
+      "subtitle": "Join hundreds of companies who trust SYSKITA to power their operations.",
+      "testimonial": {
+        "quote": "SYSKITA has transformed our operations completely. Having all our data in one place has made decision-making so much faster and more accurate.",
+        "author": "Sarah Johnson",
+        "role": "Operations Director, TechCorp"
+      }
+    },
+    "finalCta": {
+      "title": "Unify Your Operations, Empower Your Teams.",
+      "subtitle": "Take control of your field operations with live GPS tracking, automated workflows, and real-time reporting."
     }
   },
   "pricing": {
