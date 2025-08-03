@@ -9,7 +9,7 @@ const Pricing = () => {
   const pricingPlans = [
     {
       name: "Starter",
-      price: "$49",
+      price: "IDR 80,000",
       period: "per month",
       description: "Perfect for small teams getting started with frontliner management",
       features: [
@@ -31,7 +31,7 @@ const Pricing = () => {
     },
     {
       name: "Professional",
-      price: "$149",
+      price: "IDR 125,000",
       period: "per month",
       description: "Ideal for growing businesses with advanced management needs",
       features: [
