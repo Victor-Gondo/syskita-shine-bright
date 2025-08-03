@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "team": "Tim",
+    "services": "Layanan",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "faq": "FAQ",
+    "roadmap": "Roadmap",
+    "pricing": "Harga",
+    "caseStudies": "Studi Kasus",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Syarat Layanan",
+    "products": "Produk",
+    "company": "Perusahaan",
+    "solutions": "Solusi",
+    "requestDemo": "Minta Demo",
+    "visionMission": "Visi & Misi"
+  },
+  "home": {
+    "hero": {
+      "title": "Transformasi Bisnis Anda dengan Solusi Cerdas",
+      "subtitle": "Memberdayakan organisasi dengan teknologi terdepan untuk mengoptimalkan operasi, meningkatkan produktivitas, dan mendorong pertumbuhan berkelanjutan di era digital.",
+      "cta": "Mulai Hari Ini"
+    },
+    "features": {
+      "title": "Mengapa Memilih SYSKITA?",
+      "subtitle": "Temukan fitur-fitur canggih yang menjadikan SYSKITA pilihan utama untuk bisnis modern",
+      "automation": {
+        "title": "Otomasi Cerdas",
+        "description": "Sederhanakan alur kerja Anda dengan otomasi cerdas yang mengurangi tugas manual dan meningkatkan efisiensi."
+      },
+      "analytics": {
+        "title": "Analitik Lanjutan",
+        "description": "Dapatkan wawasan berharga dengan dashboard analitik komprehensif dan pelaporan real-time."
+      },
+      "integration": {
+        "title": "Integrasi Mulus",
+        "description": "Terhubung dengan alat dan sistem yang ada untuk ekosistem bisnis yang terpadu."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pilih Paket Anda",
+    "subtitle": "Pilih paket yang sempurna untuk kebutuhan bisnis Anda",
+    "starter": {
+      "name": "Starter",
+      "price": "IDR 80.000",
+      "period": "per bulan",
+      "description": "Sempurna untuk tim kecil yang baru memulai dengan manajemen frontliner",
+      "features": [
+        "Hingga 50 frontliner",
+        "Dashboard & analitik dasar",
+        "Notifikasi real-time",
+        "Akses aplikasi mobile",
+        "Dukungan email",
+        "Integrasi dasar",
+        "Pelaporan standar",
+        "Ekspor data"
+      ],
+      "limitations": [
+        "Kustomisasi terbatas",
+        "Dukungan standar saja"
+      ],
+      "cta": "Mulai Uji Coba Gratis"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "IDR 125.000",
+      "period": "per bulan",
+      "description": "Ideal untuk bisnis yang berkembang dengan kebutuhan manajemen lanjutan",
+      "features": [
+        "Hingga 200 frontliner",
+        "Analitik & wawasan lanjutan",
+        "Alur kerja kustom",
+        "Akses API",
+        "Dukungan prioritas",
+        "Integrasi lanjutan",
+        "Pelaporan kustom",
+        "Opsi white-label",
+        "Dukungan multi-lokasi",
+        "Pelacakan kinerja",
+        "Notifikasi otomatis"
+      ],
+      "limitations": [],
+      "cta": "Mulai Sekarang"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Kustom",
+      "period": "hubungi sales",
+      "description": "Solusi komprehensif untuk organisasi besar dengan kebutuhan kompleks",
+      "features": [
+        "Frontliner tak terbatas",
+        "Kustomisasi platform penuh",
+        "Manajer akun khusus",
+        "Dukungan premium 24/7",
+        "Integrasi kustom",
+        "Fitur keamanan lanjutan",
+        "Manajemen kepatuhan",
+        "SLA kustom",
+        "Deployment on-premise",
+        "Pelatihan & onboarding",
+        "Pengembangan kustom",
+        "Infrastruktur tingkat enterprise"
+      ],
+      "limitations": [],
+      "cta": "Hubungi Sales"
+    }
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "success": "Berhasil!",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "submit": "Kirim",
+    "close": "Tutup",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya",
+    "search": "Cari",
+    "filter": "Filter",
+    "sort": "Urutkan",
+    "export": "Ekspor",
+    "import": "Impor",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "view": "Lihat",
+    "add": "Tambah",
+    "remove": "Hapus",
+    "update": "Perbarui",
+    "create": "Buat",
+    "language": "Bahasa"
+  }
+}

@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CTAButton } from "@/components/ui/cta-button";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const location = useLocation();
+  const { t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -28,17 +31,17 @@ const Navigation = () => {
   ];
 
   const companyItems = [
-    { name: "About Us", path: "/about" },
-    { name: "Vision & Mission", path: "/vision-mission" },
-    { name: "Our Team", path: "/team" },
-    { name: "Case Studies", path: "/case-studies" },
+    { name: t("nav.about"), path: "/about" },
+    { name: t("nav.visionMission"), path: "/vision-mission" },
+    { name: t("nav.team"), path: "/team" },
+    { name: t("nav.caseStudies"), path: "/case-studies" },
   ];
 
   const solutionsItems = [
-    { name: "Roadmap", path: "/roadmap" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Pricing", path: "/pricing" },
-    { name: "Contact Us", path: "/contact" },
+    { name: t("nav.roadmap"), path: "/roadmap" },
+    { name: t("nav.faq"), path: "/faq" },
+    { name: t("nav.pricing"), path: "/pricing" },
+    { name: t("nav.contact"), path: "/contact" },
   ];
 
   return (
@@ -64,7 +67,7 @@ const Navigation = () => {
                   : "text-muted-foreground"
               }`}
             >
-              Home
+              {t("nav.home")}
             </Link>
             
             {/* Products Dropdown */}
@@ -73,7 +76,7 @@ const Navigation = () => {
                 onClick={() => handleDropdownToggle('products')}
                 className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
               >
-                Products
+                {t("nav.products")}
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               
@@ -101,7 +104,7 @@ const Navigation = () => {
                 onClick={() => handleDropdownToggle('company')}
                 className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
               >
-                Company
+                {t("nav.company")}
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               
@@ -129,7 +132,7 @@ const Navigation = () => {
                 onClick={() => handleDropdownToggle('solutions')}
                 className="flex items-center text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
               >
-                Solutions
+                {t("nav.solutions")}
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               
@@ -160,12 +163,13 @@ const Navigation = () => {
                   : "text-muted-foreground"
               }`}
             >
-              Blog
+              {t("nav.blog")}
             </Link>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
+          {/* Language Switcher & CTA Button */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <CTAButton variant="book" />
           </div>
 
@@ -198,12 +202,12 @@ const Navigation = () => {
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Home
+                {t("nav.home")}
               </Link>
               
               {/* Mobile Products Section */}
               <div className="pt-2 border-t border-border">
-                <p className="text-sm font-medium text-foreground mb-2">Products</p>
+                <p className="text-sm font-medium text-foreground mb-2">{t("nav.products")}</p>
                 {productItems.map((item) => (
                   <Link
                     key={item.path}
@@ -218,7 +222,7 @@ const Navigation = () => {
 
               {/* Mobile Company Section */}
               <div className="pt-2 border-t border-border">
-                <p className="text-sm font-medium text-foreground mb-2">Company</p>
+                <p className="text-sm font-medium text-foreground mb-2">{t("nav.company")}</p>
                 {companyItems.map((item) => (
                   <Link
                     key={item.path}
@@ -233,7 +237,7 @@ const Navigation = () => {
 
               {/* Mobile Solutions Section */}
               <div className="pt-2 border-t border-border">
-                <p className="text-sm font-medium text-foreground mb-2">Solutions</p>
+                <p className="text-sm font-medium text-foreground mb-2">{t("nav.solutions")}</p>
                 {solutionsItems.map((item) => (
                   <Link
                     key={item.path}
@@ -256,8 +260,13 @@ const Navigation = () => {
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Blog
+                {t("nav.blog")}
               </Link>
+              
+              {/* Mobile Language Switcher */}
+              <div className="pt-2 border-t border-border">
+                <LanguageSwitcher />
+              </div>
               
               <CTAButton 
                 variant="book" 

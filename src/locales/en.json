@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "roadmap": "Roadmap",
+    "pricing": "Pricing",
+    "caseStudies": "Case Studies",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "products": "Products",
+    "company": "Company",
+    "solutions": "Solutions",
+    "requestDemo": "Request a Demo",
+    "visionMission": "Vision & Mission"
+  },
+  "home": {
+    "hero": {
+      "title": "Transform Your Business with Intelligent Solutions",
+      "subtitle": "Empowering organizations with cutting-edge technology to optimize operations, enhance productivity, and drive sustainable growth in the digital age.",
+      "cta": "Get Started Today"
+    },
+    "features": {
+      "title": "Why Choose SYSKITA?",
+      "subtitle": "Discover the powerful features that make SYSKITA the preferred choice for modern businesses",
+      "automation": {
+        "title": "Smart Automation",
+        "description": "Streamline your workflows with intelligent automation that reduces manual tasks and increases efficiency."
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Gain valuable insights with our comprehensive analytics dashboard and real-time reporting."
+      },
+      "integration": {
+        "title": "Seamless Integration",
+        "description": "Connect with your existing tools and systems for a unified business ecosystem."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the perfect plan for your business needs",
+    "starter": {
+      "name": "Starter",
+      "price": "IDR 80,000",
+      "period": "per month",
+      "description": "Perfect for small teams getting started with frontliner management",
+      "features": [
+        "Up to 50 frontliners",
+        "Basic dashboard & analytics",
+        "Real-time notifications",
+        "Mobile app access",
+        "Email support",
+        "Basic integrations",
+        "Standard reporting",
+        "Data export"
+      ],
+      "limitations": [
+        "Limited customization",
+        "Standard support only"
+      ],
+      "cta": "Start Free Trial"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "IDR 125,000",
+      "period": "per month",
+      "description": "Ideal for growing businesses with advanced management needs",
+      "features": [
+        "Up to 200 frontliners",
+        "Advanced analytics & insights",
+        "Custom workflows",
+        "API access",
+        "Priority support",
+        "Advanced integrations",
+        "Custom reporting",
+        "White-label options",
+        "Multi-location support",
+        "Performance tracking",
+        "Automated notifications"
+      ],
+      "limitations": [],
+      "cta": "Get Started"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "contact sales",
+      "description": "Comprehensive solution for large organizations with complex needs",
+      "features": [
+        "Unlimited frontliners",
+        "Full platform customization",
+        "Dedicated account manager",
+        "24/7 premium support",
+        "Custom integrations",
+        "Advanced security features",
+        "Compliance management",
+        "Custom SLA",
+        "On-premise deployment",
+        "Training & onboarding",
+        "Custom development",
+        "Enterprise-grade infrastructure"
+      ],
+      "limitations": [],
+      "cta": "Contact Sales"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "export": "Export",
+    "import": "Import",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "add": "Add",
+    "remove": "Remove",
+    "update": "Update",
+    "create": "Create",
+    "language": "Language"
+  }
+}

@@ -4,77 +4,47 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CTAButton } from "@/components/ui/cta-button";
 import { SEOHead } from "@/components/SEOHead";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Pricing = () => {
-  const pricingPlans = [
-    {
-      name: "Starter",
-      price: "IDR 80,000",
-      period: "per month",
-      description: "Perfect for small teams getting started with frontliner management",
-      features: [
-        "Up to 50 frontliners",
-        "Basic dashboard & analytics",
-        "Real-time notifications",
-        "Mobile app access",
-        "Email support",
-        "Basic integrations",
-        "Standard reporting",
-        "Data export",
-      ],
-      limitations: [
-        "Limited customization",
-        "Standard support only",
-      ],
-      popular: false,
-      cta: "Start Free Trial",
-    },
-    {
-      name: "Professional",
-      price: "IDR 125,000",
-      period: "per month",
-      description: "Ideal for growing businesses with advanced management needs",
-      features: [
-        "Up to 200 frontliners",
-        "Advanced analytics & insights",
-        "Custom workflows",
-        "API access",
-        "Priority support",
-        "Advanced integrations",
-        "Custom reporting",
-        "White-label options",
-        "Multi-location support",
-        "Performance tracking",
-        "Automated notifications",
-      ],
-      limitations: [],
-      popular: true,
-      cta: "Get Started",
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      period: "contact sales",
-      description: "Comprehensive solution for large organizations with complex needs",
-      features: [
-        "Unlimited frontliners",
-        "Full platform customization",
-        "Dedicated account manager",
-        "24/7 premium support",
-        "Custom integrations",
-        "Advanced security features",
-        "Compliance management",
-        "Custom SLA",
-        "On-premise deployment",
-        "Training & onboarding",
-        "Custom development",
-        "Enterprise-grade infrastructure",
-      ],
-      limitations: [],
-      popular: false,
-      cta: "Contact Sales",
-    },
-  ];
+  const { t } = useLanguage();
+  
+  const getPricingPlans = () => {
+    return [
+      {
+        name: t("pricing.starter.name"),
+        price: t("pricing.starter.price"),
+        period: t("pricing.starter.period"),
+        description: t("pricing.starter.description"),
+        features: t("pricing.starter.features") || [],
+        limitations: t("pricing.starter.limitations") || [],
+        popular: false,
+        cta: t("pricing.starter.cta"),
+      },
+      {
+        name: t("pricing.professional.name"),
+        price: t("pricing.professional.price"),
+        period: t("pricing.professional.period"),
+        description: t("pricing.professional.description"),
+        features: t("pricing.professional.features") || [],
+        limitations: t("pricing.professional.limitations") || [],
+        popular: true,
+        cta: t("pricing.professional.cta"),
+      },
+      {
+        name: t("pricing.enterprise.name"),
+        price: t("pricing.enterprise.price"),
+        period: t("pricing.enterprise.period"),
+        description: t("pricing.enterprise.description"),
+        features: t("pricing.enterprise.features") || [],
+        limitations: t("pricing.enterprise.limitations") || [],
+        popular: false,
+        cta: t("pricing.enterprise.cta"),
+      },
+    ];
+  };
+  
+  const pricingPlans = getPricingPlans();
 
   const addOns = [
     {
@@ -131,11 +101,10 @@ const Pricing = () => {
       <section className="bg-gradient-hero text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Simple, Transparent Pricing
+            {t("pricing.title")}
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
-            Choose the plan that fits your business needs. All plans include our core frontliner management features 
-            with scalable options as you grow.
+            {t("pricing.subtitle")}
           </p>
           <div className="flex justify-center items-center space-x-4 mb-8">
             <Badge variant="secondary" className="px-4 py-2">
