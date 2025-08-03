@@ -265,7 +265,8 @@ const Navigation = () => {
               
               {/* Mobile Language Switcher */}
               <div className="pt-2 border-t border-border">
-                <LanguageSwitcher />
+                <p className="text-sm font-medium text-foreground mb-2">Language / Bahasa</p>
+                <LanguageSwitcher isMobile={true} />
               </div>
               
               <CTAButton 
